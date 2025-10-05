@@ -1,0 +1,142 @@
+.subtitle-staff{
+    font-size: 1.5rem;
+}
+
+.title-staff{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -1.2rem;
+    font-size: 3rem;
+}
+
+.texts-staff{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    color: #02719B; /* Color azul verdoso del texto */
+    margin-bottom: 8px;
+    font-family: 'pt sans';
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #008C9E;
+    border-radius: 50px; /* Bordes muy redondeados para inputs */
+    box-sizing: border-box; /* Para que el padding no afecte el ancho total */
+    font-size: 16px;
+    color: #02719B;
+    font-family: 'pt sans';
+}
+
+.form-group textarea {
+    border-radius: 25px; /* Bordes menos redondeados para el textarea */
+    resize: vertical; /* Permite al usuario cambiar la altura */
+    min-height: 120px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #02719B;
+    box-shadow: 0 0 5px rgba(0, 140, 158, 0.5);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #02719B; /* Color de fondo del botón */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #012e3f; 
+}
+
+.contact-btn{
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    background-color: transparent;
+    padding: 1rem;
+    border: solid, 3px, #008C9E;
+    max-width: 440px;
+    font-family: 'open sans';
+    font-size: 1.3rem;
+    color: #008C9E;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-btn:hover{
+    background-color: #012e3f;
+    color: white;
+    border: solid, 3px, transparent
+}
+
+.btns-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
+    max-width: 480px;
+}
+
+.items-contact-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+@media(min-width:768px){
+    .items-contact-container{
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+        justify-content: center;
+        padding: 1rem;
+    }
+}
