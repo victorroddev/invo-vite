@@ -22,11 +22,11 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: 'services', // La URL será tu-sitio.com/nueva-pagina
+        path: 'Services', // La URL será tu-sitio.com/nueva-pagina
         element: <Services />,
       },
       {
-        path: 'privacity',
+        path: 'Privacity',
         element: <Privacity />
       }
     ],
