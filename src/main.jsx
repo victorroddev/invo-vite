@@ -16,17 +16,18 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />, // App ahora es el "cascarón" o layout principal
+    errorElement: <HomePage />,
     children: [
       {
         index: true, // Esto hace que HomePage sea la ruta por defecto de '/'
         element: <HomePage />,
       },
       {
-        path: 'Services', // La URL será tu-sitio.com/nueva-pagina
+        path: 'services', // La URL será tu-sitio.com/nueva-pagina
         element: <Services />,
       },
       {
-        path: 'Privacity',
+        path: 'privacity',
         element: <Privacity />
       }
     ],
