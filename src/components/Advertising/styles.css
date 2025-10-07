@@ -1,0 +1,38 @@
+
+
+.advertising-container a{
+    width: 99%;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: rgb(106,202,239,.30 );
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.advertising-container p{
+    font-family: 'Open sans';
+    font-size: 1rem;
+    text-align: center;
+}
+
+.advertising-icon{
+    color: black;
+    font-size: 2rem;
+    animation: var(--animate-ping);
+    -webkit-animation: var(--animate-ping);
+}
+
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

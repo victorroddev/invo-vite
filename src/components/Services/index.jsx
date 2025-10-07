@@ -2,6 +2,7 @@ import './style.css';
 import ortodonciaIcon from '../../icons/ortodoncia.svg';
 import endodonciaIcon from '../../icons/endodoncia.svg';
 import implantologiaIcon from '../../icons/implantologia.svg';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
     return(
@@ -33,7 +34,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <button className='services-button'>Descubre mas de nuestros servicios</button>
+            <Link to="/Services" className='services-button'>Descubre mas de nuestros servicios</Link>
         </div>
     )
 }

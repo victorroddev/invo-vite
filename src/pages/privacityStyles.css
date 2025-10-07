@@ -1,0 +1,19 @@
+.privacity-titles{
+    font-family: 'Open sans';
+    font-size: 1.2rem;
+}
+
+.privacity-container{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.privacity-paragraph{
+    font-family: 'pt sans';
+}
+
+.bolds{
+    font-family: 'Open sans';
+}

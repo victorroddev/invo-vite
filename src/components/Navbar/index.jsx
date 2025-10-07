@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import logo from '../../img/logos/invo-blanco.png';
 import './styles.css';
 import Menu from '../Menu';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     //Set open menu state as false
@@ -34,7 +35,9 @@ const Navbar = () => {
     return(
         <div className='navbar' ref={menuRef}>
             <div className='logo-container'>
-                <img className="logo-navbar" src={logo} alt="Logo Invo Dental" />
+                <Link to='/' aria-label="go to home page">
+                    <img className="logo-navbar" src={logo} alt="Logo Invo Dental" />
+                </Link>
             </div>
                 <button 
                 className={`menu-button ${isMenuOpen ? 'is-active': ''}`} 

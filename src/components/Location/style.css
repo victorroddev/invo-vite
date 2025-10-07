@@ -1,0 +1,35 @@
+.location-container{
+    margin-top: 3rem;
+}
+
+.location-photo{
+    display: flex;
+    width: 400px;
+    position: relative;
+    top: -3rem;
+    margin: 0 auto;
+}
+
+.location-text-container{
+    margin: 0 auto;
+    background-color: #02719B;
+    display: flex;
+    justify-content: center;
+    max-width: 390px;
+    border-radius: 2.5rem;
+    padding: 1.5rem;
+    -webkit-border-radius: 2.5rem;
+    -moz-border-radius: 2.5rem;
+    -ms-border-radius: 2.5rem;
+    -o-border-radius: 2.5rem;
+    position: relative;
+    top: -4rem;
+}
+
+.location-text-container p{
+    text-align: center;
+    font-family: 'Open sans';
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+}

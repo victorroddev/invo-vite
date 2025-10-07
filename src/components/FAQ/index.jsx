@@ -18,8 +18,7 @@ const Faq = () => {
                     <img src={questionIcon} alt="Icono de pregunta" className='question-icon'/>
                 </div>
                 <p className='question-text'>¿Cuáles son sus horarios de atención?</p>
-                <p>Lunes a Viernes 10:00 am 19:00 pm.</p>
-                <p>Sabado 10:00 am 19:00 pm.</p>
+                <p className='question-answer'>Lunes a Viernes 10:00 am 19:00 pm. <br />Sabado 10:00 am 19:00 pm.</p>
             </div>
             <div className="question question-2">
                 <div className="header-container">
@@ -29,9 +28,8 @@ const Faq = () => {
                     </div>
                     <img src={questionIcon} alt="Icono de pregunta" className='question-icon'/>
                 </div>
-                <p className='question-text'>¿Cuáles son sus horarios de atención?</p>
-                <p>Lunes a Viernes 10:00 am 19:00 pm.</p>
-                <p>Sabado 10:00 am 19:00 pm.</p>
+                <p className='question-text'>¿Atienden emergencias? </p>
+                <p className='question-answer'>Si, atendemos emergencias todos los dias de la semana.</p>
             </div>
             <div className="question question-3">
                 <div className="header-container">
@@ -41,9 +39,8 @@ const Faq = () => {
                     </div>
                     <img src={questionIcon} alt="Icono de pregunta" className='question-icon'/>
                 </div>
-                <p className='question-text'>¿Cuáles son sus horarios de atención?</p>
-                <p>Lunes a Viernes 10:00 am 19:00 pm.</p>
-                <p>Sabado 10:00 am 19:00 pm.</p>
+                <p className='question-text'>¿Aceptan aseguranzas americanas?</p>
+                <p className='question-answer'>Si,  aceptamos la mayoria de aseguranzas americanas.</p>
             </div>
         </div>
         </div>
