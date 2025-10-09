@@ -15,7 +15,7 @@ const Hero = () => {
                             <p className='hero-2-subtitle hero-text hero-subtitle'>dental</p>
                         </div>
                         <div className='sub-right'>
-                            <p className='hero-paragraph'>Un espacio pensado para ti, con profesionales equipo moderno y buen ambiente</p>
+                            <p className='hero-paragraph'>Un espacio pensado para ti, con profesionales, equipo moderno y buen ambiente</p>
                         </div>
                             
                     </div>
