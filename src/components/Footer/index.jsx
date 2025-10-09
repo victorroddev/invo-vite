@@ -17,12 +17,16 @@ const Footer = () =>{
             <div className='footer-line'></div>
             <p className='site-text'>Sitio</p>
             <ul>
-                <li className="footer-link">Inicio</li>
+                <Link to="/">
+                    <li className="footer-link">Inicio</li>
+                </Link>
                 <Link to='/Privacity'>                
-                <li className="footer-link">Politica de privacidad</li>
+                    <li className="footer-link">Politica de privacidad</li>
                 </Link>
                 <li className="footer-link">FAQ</li>
-                <li className="footer-link">Servicios</li>
+                <Link to='/Services'>
+                    <li className="footer-link">Servicios</li>
+                </Link>
             </ul>
             <div className='footer-line'></div>
             <p className='site-text'>Síguenos</p>

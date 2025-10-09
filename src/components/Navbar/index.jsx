@@ -1,55 +1,59 @@
 import { useState, useEffect, useRef } from 'react';
 import logo from '../../img/logos/invo-blanco.png';
 import './styles.css';
-import Menu from '../Menu';
+import Menu from '../Menu'; // Importa tu componente Menu
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-    //Set open menu state as false
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const menuRef = useRef(null); //Reference
+    const navbarRef = useRef(null); // Ref para el contenedor principal del Navbar
 
+    // Función para cerrar el menú explícitamente
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
 
-    //Change state of menu
-    const toggleMenu = () =>{
+    // Función para alternar el estado del menú
+    const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    useEffect((()=> {
+    useEffect(() => {
         const handleClickOutside = (event) => {
-            if(menuRef.current && !menuRef.current.contains(event.target)) {
-                setIsMenuOpen(false); //closes menu
+            // Si el clic fue fuera del Navbar (que incluye el botón de menú y el menú mismo)
+            // y el menú está abierto, ciérralo.
+            if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+                closeMenu();
             }
         };
-        //Function that determines if menu is open
-        if(isMenuOpen) {
+
+        if (isMenuOpen) {
             document.addEventListener('mousedown', handleClickOutside);
         }
-        //Event cleaner
-        return() => {
-            document.removeEventListener('mousedown', handleClickOutside)
-        }
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [isMenuOpen]);
 
-    }), [isMenuOpen]);
-
-    return(
-        <div className='navbar' ref={menuRef}>
+    return (
+        <div className='navbar' ref={navbarRef}>
             <div className='logo-container'>
-                <Link to='/' aria-label="go to home page">
+                <Link to='/' aria-label="go to home page" onClick={closeMenu}> {/* Cierra el menú al hacer clic en el logo */}
                     <img className="logo-navbar" src={logo} alt="Logo Invo Dental" />
                 </Link>
             </div>
-                <button 
-                className={`menu-button ${isMenuOpen ? 'is-active': ''}`} 
-                aria-label='toggle menu' 
+            <button
+                className={`menu-button ${isMenuOpen ? 'is-active' : ''}`}
+                aria-label='toggle menu'
                 onClick={toggleMenu}
-                >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <p>Cerrar</p>
-                </button>
-                <Menu isOpen={isMenuOpen} />
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+                <p>{isMenuOpen ? 'Cerrar' : 'Menú'}</p> {/* Texto dinámico para el botón */}
+            </button>
+            {/* Aquí pasamos la función closeMenu como prop al componente Menu */}
+            <Menu isOpen={isMenuOpen} closeMenu={closeMenu} />
         </div>
     );
 };

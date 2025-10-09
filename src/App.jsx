@@ -6,13 +6,15 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop.jsx';
 function App(){
   return (
     <div>
-      <NavBar />
-      <ScrollToTop />
       <main>
 
+      <NavBar />
+      <ScrollToTop />
+
       <Outlet />
-      </main>
-      <Footer />
+
+      <Footer />\
+        </main>
     </div>
   )
 }

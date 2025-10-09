@@ -2,10 +2,12 @@
 import './styles.css';
 import questionIcon from '../../icons/question-icon.svg';
 
+
 const Faq = () => {
     return(
-        <div className='faq-section'>
-            <div className='texts-staff'>
+        <div className='faq-section' >
+            <section  id='Faq'>
+                <div className='texts-staff'>
                 <p className='subtitles subtitle-staff'>resolvemos</p>
             <p className='title title-staff'>tus dudas</p>
             <div className="faq-container">
@@ -44,7 +46,9 @@ const Faq = () => {
             </div>
         </div>
         </div>
-            </div>
+            </section>
+            
+        </div>
             
         
     )
