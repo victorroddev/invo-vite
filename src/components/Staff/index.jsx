@@ -72,10 +72,10 @@ const Staff = () => {
                     <SplideSlide className='person' >
                         <Card desc='Anestesiologo' name='Ivan Roacho'img={ivanR} className='person' />
                     </SplideSlide>
-
-                    <SplideSlide className='person' >
-                        <Card desc='Asistente Dental' name='Abril Morales'img={abrilM} className='person' />
-                    </SplideSlide>
+                    
+                    {/* <SplideSlide className='person' >
+                        <Card desc='Asistente Dental' name='Ivonne Magallanes'img={abrilM} className='person' />
+                    </SplideSlide> */}
 
                     <SplideSlide className='person' >
                         <Card desc='Asistente Dental' name='Angela Rodriguez'img={angelaR} className='person' />

@@ -8,10 +8,12 @@ const Contact = () => {
             <p className='title title-staff'>Contacto</p>
             </div>
             <div className='items-contact-container'>
-                <form className="contact-form" action="/enviar" method="POST">
+                <form className="contact-form" action="https://api.web3forms.com/submit" method="POST">
                 <div className="form-group">
                 <label htmlFor="nombre">Nombre</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+                <input type="hidden" name="access_key" value="23c55a5d-3109-47db-a478-9a102202543c" />
+
             </div>
 
             <div className="form-group">
@@ -34,8 +36,8 @@ const Contact = () => {
             </button>
                 </form>
                 <div className='btns-container'>
-                    <button className='contact-btn'>WhatsApp</button>
-                    <button className='contact-btn'>Teléfono</button>
+                    <button className='contact-btn' onClick={() => window.open('https://api.whatsapp.com/send?phone=5216561032740&text=Hola%2C%20Necesito%20agendar%20una%20cita.', '_blank')}>WhatsApp</button>
+                    <button className='contact-btn' onClick={() => window.location.href = 'tel:+526561032740'}>Teléfono</button>
                 </div>
             </div>
 

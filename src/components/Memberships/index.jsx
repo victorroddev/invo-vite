@@ -25,7 +25,7 @@ const Memberships = () => {
 
                         
 
-                        <button className='buy-button'>
+                        <button onClick={() => window.open('https://buy.stripe.com/9B67sL7Q0e21dzJcbRak000', '_blank')} className='buy-button'>
                         Aquirir
                     </button>
                     </div>
@@ -53,7 +53,7 @@ const Memberships = () => {
                         <div className='membership-divider'></div>
                         <p className="membership-item">Transporte de ida y vuelta gratis</p>
                         <p className='family-dis'>*Beneficios para 4 miembros</p>
-                        <button className='buy-button'>
+                        <button className='buy-button' onClick={() => window.open('https://buy.stripe.com/28E14n3zK6zzfHRejZak001', '_blank')}>
                         Aquirir
 
                         
@@ -82,7 +82,7 @@ const Memberships = () => {
                         <p className="membership-item">Implante dental con 20% de descuento</p>
                         <div className='membership-divider'></div>
                         <p className="membership-item">Transporte de ida y vuelta gratis</p>
-                        <button className='buy-button'>
+                        <button className='buy-button' onClick={() => window.open('https://buy.stripe.com/14A00jgmw2jjbrBa3Jak002', '_blank')}>
                         Aquirir
                     </button>
                     </div>
