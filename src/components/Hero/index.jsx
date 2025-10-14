@@ -22,10 +22,10 @@ const Hero = () => {
                     <div className='hero-book-container'>
                         <p className='book-title'>Agenda ahora</p>
                         <div className='icons-container'>
-                            <a href="#" className='icon-container'>
+                            <a href="https://api.whatsapp.com/send?phone=5216561032740&text=Hola%2C%20Necesito%20agendar%20una%20cita." className='icon-container'>
                                 <img src={bookingIcon} alt="Logo Whatsapp" className='book-icon'/>
                             </a>
-                            <a href="#" className='icon-container '>
+                            <a href="https://api.whatsapp.com/send?phone=5216561032740&text=Hola%2C%20Necesito%20agendar%20una%20cita." className='icon-container '>
                                 <img src={whatsAppIcon} alt="Logo para agendar" className='book-icon'/>
                             </a>
                         </div>
