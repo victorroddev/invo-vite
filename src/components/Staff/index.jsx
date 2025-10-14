@@ -9,7 +9,7 @@ import jonathanA from '../../img/staff/jonathan-aguilar.webp';
 import paolaP from '../../img/staff/paola-plasencia.webp';
 import ivanR from '../../img/staff/ivan-roacho.webp';
 import joseG from '../../img/staff/jose-a-garcia.webp';
-import abrilM from '../../img/staff/abril-morales.webp';
+import ivoneM from '../../img/staff/ivone-magallanes.webp';
 import danielleH from '../../img/staff/danielle-hernandez.webp';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/core';
@@ -73,9 +73,9 @@ const Staff = () => {
                         <Card desc='Anestesiologo' name='Ivan Roacho'img={ivanR} className='person' />
                     </SplideSlide>
                     
-                    {/* <SplideSlide className='person' >
-                        <Card desc='Asistente Dental' name='Ivonne Magallanes'img={abrilM} className='person' />
-                    </SplideSlide> */}
+                    <SplideSlide className='person' >
+                        <Card desc='Asistente Dental' name='Ivonne Magallanes'img={ivoneM} className='person' />
+                    </SplideSlide> 
 
                     <SplideSlide className='person' >
                         <Card desc='Asistente Dental' name='Angela Rodriguez'img={angelaR} className='person' />
